@@ -12,4 +12,4 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion
 )
 
-//libraryDependencies += "log4j" % "log4j" % "1.2.14"
+libraryDependencies += "log4j" % "log4j" % "1.2.14"

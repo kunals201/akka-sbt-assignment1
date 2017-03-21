@@ -1774,9 +1774,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.13!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
-[debug] :: resolution report :: resolve 2810ms :: artifacts dl 101ms
+[debug] :: resolution report :: resolve 9725ms :: artifacts dl 181ms
 [debug] 	report for default#akka-sbt$sbt_2.10;1.0 default produced in /home/knoldus/akka-sbt/target/resolution-cache/reports/default-akka-sbt$sbt_2.10-default.xml
-[debug] 	resolve done (2810ms resolve - 101ms download)
+[debug] 	resolve done (9725ms resolve - 181ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#akka-sbt$sources_2.10;1.0
 [debug] 	confs: [default]
@@ -2470,6 +2470,6 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.6!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.13.13!interface.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.13.13!logging.jar(src)
-[debug] :: resolution report :: resolve 306ms :: artifacts dl 368ms
+[debug] :: resolution report :: resolve 633ms :: artifacts dl 2942ms
 [debug] 	report for default#akka-sbt$sources_2.10;1.0 default produced in /home/knoldus/akka-sbt/target/resolution-cache/reports/default-akka-sbt$sources_2.10-default.xml
-[debug] 	resolve done (306ms resolve - 368ms download)
+[debug] 	resolve done (633ms resolve - 2942ms download)

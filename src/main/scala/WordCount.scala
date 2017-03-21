@@ -1,14 +1,14 @@
 import akka.actor.{Actor, ActorSystem, Props}
 import akka.pattern.ask
 import akka.util.Timeout
-
+import org.apache.log4j.Logger
 import scala.concurrent.Future
 import scala.concurrent.duration._
 import scala.io.Source
 
 class TotalWords(fileName: String) extends Actor {
   var wordCount = 0
-
+  val log = Logger.getLogger(this.getClass)
   import scala.concurrent.ExecutionContext.Implicits.global
 
   val messageActor = context.actorOf(Props[WordsInLine])
@@ -19,10 +19,9 @@ class TotalWords(fileName: String) extends Actor {
         implicit val timeout = Timeout(1000 seconds)
         val f: Future[Int] = (messageActor ask line).mapTo[Int]
         Thread.sleep(1000)
-        f.foreach { words => wordCount += words }
-        //println(words);
+        f.foreach { words =>log.info(words);wordCount += words }
       }
-      println(s"$msg $wordCount")
+         log.info(s"$msg $wordCount")
     }
   }
 }
